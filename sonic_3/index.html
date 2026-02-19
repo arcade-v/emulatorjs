@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;height:100%;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            EJS_player = '#game';
+            EJS_core = 'segaMD';
+            EJS_gameName = 'sonic_3';
+            EJS_color = '#0064ff';
+            EJS_startOnLoaded = true;
+            EJS_pathtodata = 'https://cdn.jsdelivr.net/npm/@emulatorjs/emulatorjs/data/';
+            EJS_gameUrl = 'https://cdn.jsdelivr.net/gh/FutureElliotto/Arcade-4-Games/emulatorjs/sonic_3/sonic_3.bin';
+        function loadGame() {
+            var script = document.createElement("script");
+            script.src = EJS_pathtodata + "loader.js";
+            document.body.appendChild(script);
+        }
+
+        loadGame();
+    </script>
+    </body>
+</html>
