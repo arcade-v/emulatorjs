@@ -19,13 +19,7 @@
             EJS_startOnLoaded = true;
             EJS_pathtodata = 'https://cdn.jsdelivr.net/npm/@emulatorjs/emulatorjs/data/';
             EJS_gameUrl = 'https://cdn.jsdelivr.net/gh/arcade-v/emulatorjs/metroid_zero_mission/metroid_zero_mission.zip';
-        function loadGame() {
-            var script = document.createElement("script");
-            script.src = EJS_pathtodata + "loader.js";
-            document.body.appendChild(script);
-        }
-
-        loadGame();
-    </script>
+        </script>
+        <script src='https://cdn.jsdelivr.net/npm/@emulatorjs/emulatorjs/data/loader.js'></script>
     </body>
 </html>
