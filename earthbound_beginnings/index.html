@@ -19,8 +19,14 @@
             EJS_color = '#0064ff';
             EJS_startOnLoaded = true;
             EJS_pathtodata = 'https://cdn.jsdelivr.net/npm/@emulatorjs/emulatorjs/data/';
-            EJS_gameUrl = 'https://cdn.jsdelivr.net/gh/FutureElliotto/Arcade-4-Games@main/emulatorjs/earthbound_beginnings/EarthBound_Beginnings.zip';
-        </script>
-        <script src='https://cdn.jsdelivr.net/gh/FutureElliotto/Arcade-4-emulator@master/loader.js'></script>
+            EJS_gameUrl = 'https://cdn.jsdelivr.net/gh/arcade-v/emulatorjs/earthbound_beginnings/EarthBound_Beginnings.zip';
+        function loadGame() {
+            var script = document.createElement("script");
+            script.src = EJS_pathtodata + "loader.js";
+            document.body.appendChild(script);
+        }
+
+        loadGame();
+    </script>
     </body>
 </html>
